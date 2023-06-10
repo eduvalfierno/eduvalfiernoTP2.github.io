@@ -1,0 +1,544 @@
+:root { /*custom property*/
+    /*paleta de colores*/
+    --color-1 :rgb(142, 255, 151);
+    --color-main : rgba(225, 235, 235, 0.973);
+
+    /*imagenes a reemplazar*/
+    --background-page : url(media/fondomesa.jpg) ;
+
+    /*fuentes*/
+    --fuente-1 : 'Calibri', sansserif;
+    --fuente-2 : 'Calibri', sansserif;
+
+    /*tamaño fuentes*/
+    --font-size-predeterminada : 16px;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family: var(--fuente-2);
+    font-size: var(--font-size-predeterminada);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+header {    
+    min-height: 70vh;    
+    flex-direction: column;
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(64, 61, 61); 
+    color: white;
+    display: flex;
+    }
+
+
+.navleft {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    max-height: 60px;
+    font-size: larger;
+    padding: 0px;
+}
+
+.navtext {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    max-height: 60px;
+    font-size: larger;
+    padding: 8px;
+}
+
+.navright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: row;
+    text-align: right;
+    font-size: medium;
+    gap: 20px;
+    padding: 14px;
+}
+
+.linkTicket {
+    justify-content: end; 
+    text-align: right;
+    font-size: medium;
+    color: rgb(43, 214, 43);
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 46, 72);
+    color: white;
+}
+
+
+
+
+  .LaConferencia{
+    color: white;
+    width: 100%;
+    background-image: url(images/fondo2.jpg);
+    background-size: cover;
+    text-align: right;
+    margin-right: 50px;
+    position: relative;
+    box-sizing: content-box;
+    height: 450px;
+ 
+}   
+
+
+
+.IntTitulo{
+    display: flex;
+    padding-right: 100px;
+    justify-content: right;
+    }
+
+.IntTexto{
+    display: flex;
+    padding-right: 100px;
+    justify-content: right;
+    }
+
+
+.LosOradores {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    }
+
+
+    .flex-item {
+        border: 2px solid lightgrey;
+        height: 450px;
+        width:300px;
+    }
+    
+
+#ConvierteteenOrador{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+    .slider-container {
+        display: flex;
+        width: 50%;
+        height: 50vh;
+        overflow-x: scroll;
+      
+        scroll-snap-type: x mandatory;
+      }
+      
+      .slider-container img {
+        flex: 0 0 100%;
+        width: 50%;
+        object-fit: cover;
+        scroll-snap-align: center;
+      }
+
+      .TextoLateral{
+        background-color:rgb(43, 58, 58);
+        color: white;
+        width: 50%;
+        margin-left: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+      }
+     
+    .LugaryFecha{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    #formTickets1{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        height: 50vh;
+        scroll-snap-type: x mandatory;
+    }
+
+    #formTickets2{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        height: 50vh;
+        scroll-snap-type: x mandatory;
+        flex: 0 0 100%;
+        object-fit: cover;
+    }
+    
+        .slider-container {
+            display: flex;
+            width: 50%;
+            height: 50vh;
+            overflow-x: scroll;
+          
+            scroll-snap-type: x mandatory;
+          }
+          
+          .slider-container img {
+            flex: 0 0 100%;
+            width: 50%;
+            object-fit: cover;
+            scroll-snap-align: center;
+          }
+    
+
+
+button.enviar {
+    display: block;
+    margin: auto;
+    align-items: middle;
+    text-align: center;
+    color: white;border-color: rgb(179, 236, 105);background-color: rgb(159, 219, 80);
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  button.totalpago {
+    display: block;
+    margin: auto;
+    align-items: middle;
+    text-align: left;
+    color: rgb(36, 28, 104);border-color: rgb(105, 236, 229);background-color: rgb(122, 226, 204);
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .Resultadoabotonado{
+    display: block;
+    margin: auto;
+    align-items: middle;
+    text-align: left;
+    color: rgb(36, 28, 104);border-color: rgb(105, 236, 229);background-color: rgb(122, 226, 204);
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"
+  }
+
+  .data {
+    display: inline-block;
+    text-align: left;
+    color:darkgrey;border-color: lightgrey;background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .tema {
+    display: block;
+    color:darkgrey;border-color: lightgrey;background-color: white;
+    width: 100%;
+    padding: 50px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  
+  .ComprarTickets{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-content: stretch;
+
+    }
+
+    .formu3{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+        width: 50%;
+    }
+
+    .nombreapellido{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        gap: 5px;        
+    }
+    
+    #formu3{
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #correo{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .correo {
+        display: block;
+        color:darkgrey;border-color: lightgrey;background-color: white;
+        padding: 5px;
+        font-size: 20px;
+        text-align: left;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    
+    }
+
+    .cantidad{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        gap: 5px;
+         }
+
+    .categoria{
+        display: flex;
+        text-align: left;
+        margin-left: -4%;
+        gap: 5px;        
+        height: 30px;
+    }
+    
+    .formu4{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+
+button.borrar{
+        display: inline;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            color: white;border-color: rgb(179, 236, 105);background-color: rgb(159, 219, 80);
+            width: 40%;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 5%;
+        }
+
+button.resumen{
+display: inline;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    color: white;border-color: rgb(179, 236, 105);background-color: rgb(159, 219, 80);
+    width: 40%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5%;
+}
+    /*
+    display: block;
+    margin: auto;
+    align-items: middle;
+    text-align: center;
+    color: white;border-color: rgb(179, 236, 105);background-color: rgb(159, 219, 80);
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+*/
+
+    .ticket-item1 {
+        border: 2px solid rgb(63, 44, 175);
+        height: 200px;
+        display: inline-block;
+        width:200px;
+        align-content: stretch;
+    }
+
+   .ticket-item2 {
+        border: 2px solid rgb(224, 191, 41);
+        height: 200px;
+        display: inline-block;
+        width:200px;
+        align-content: stretch;
+        }
+
+    .t1{
+        align-content: space-around;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+
+#contactos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+.formu1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.formu5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1px;
+    margin-right: 300px;
+    margin-left: 300px;
+    
+}
+
+.formu2{
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+  
+.btn1{
+    color: #fcfcfc;
+    border-color: #e7ecf1;
+    border-style:outset;
+    background-color:rgba(8, 53, 18, 0.1);
+    padding: 8px 15px;
+    border-radius: 10%;
+    }
+
+.btn2{
+    color:white;
+	background-color:green;
+    border-color: green;
+    border-style:outset;
+    padding: 8px 15px;
+    border-radius: 10%;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 12vw;
+}
+
+.btninfo1{
+    color: black;
+	background-color:rgb(255, 217, 0);
+    border: rgb(255, 217, 0);
+    padding: 2px 5px;
+    border-radius: 10%;
+    }
+
+.btninfo2{
+        color: white;
+        background-color:rgb(83, 156, 199);
+        border: rgb(83, 156, 199);
+        padding: 2px 5px;
+        border-radius: 10%;
+    }
+
+.btninfo3{
+        color: white;
+        background-color:rgb(99, 95, 95);
+        border: rgb(99, 95, 95);
+        padding: 2px 5px;
+        border-radius: 10%;
+    }
+
+.btninfo4{
+        color: white;
+        background-color:rgb(185, 23, 23);
+        border: rgb(185, 23, 23);
+        padding: 2px 5px;
+        border-radius: 10%;
+    }
+
+h2 {
+    text-align: center;
+    }
+
+h4 {
+    text-align: center;
+    }
+
+.listaSinEstilo {
+    list-style-type: none;
+} 
+
+.listaSinEstilo2 {
+    list-style-type: none;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--color-1);
+}
+
+footer {
+    height: 12vh;
+}
+
+/*media queries*/
+@media screen and (min-width: 1024px) {
+    #menu {
+        padding: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+}
